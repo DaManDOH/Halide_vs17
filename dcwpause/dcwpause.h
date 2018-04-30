@@ -6,7 +6,7 @@
 
 // A non-external pause
 void dcwpause() {
-	std::cout << "Any key to exit..." << std::endl;
+	std::cout << "To exit, hit Enter key..." << std::endl;
 	char pauseBuff[2];
 	std::cin.read(pauseBuff, 1);
 }
