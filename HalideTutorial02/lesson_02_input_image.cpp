@@ -35,12 +35,16 @@
 using namespace Halide::Tools;
 
 int main(int argc, char **argv) {
+	std::string targetFilename = "images/rgb.png";
+	if (argc > 1) {
+		targetFilename = argv[1];
+	}
 
     // This program defines a single-stage imaging pipeline that
     // brightens an image.
 
     // First we'll load the input image we wish to brighten.
-    Halide::Buffer<uint8_t> input = load_image("images/rgb.png");
+    Halide::Buffer<uint8_t> input = load_image(targetFilename);
 
     // See figures/lesson_02_input.jpg for a smaller version.
 

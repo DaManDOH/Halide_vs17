@@ -1,3 +1,10 @@
+# Preconditions for This Repository
+1. Never build the entire Halide Solution at once.
+1. Download halide-win-64-distro-trunk-*.zip file from https://github.com/halide/Halide/releases & extract to the halide-win-64-distro of this folder.
+1. Open libpng/projects/vstudio2017/vstudio.sln in Visual Studio 2017, then rebuild the libpng project's Debug and Release (not "Debug Library" or "Release Library") configs targeting x64.
+
+# Procedure from Scratch
+1. Download halide-win-64-distro-trunk-*.zip file from https://github.com/halide/Halide/releases
 1. Download jpegsr9c.zip from www.ijg.org (http://www.ijg.org/files/jpegsr9c.zip)
 1. Extract
 1. Copy makefile.vs to MAKEFILE
