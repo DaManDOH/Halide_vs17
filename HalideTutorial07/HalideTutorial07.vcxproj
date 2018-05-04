@@ -87,10 +87,10 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>jpeg.lib;libpng_debug.lib;Halide.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>jpeg.lib;libpng_a_debug.lib;Halide.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy "$(SolutionDir)libpng\projects\vstudio2017\x64\Debug\libpng_debug.dll" "$(TargetDir)" /Y /Q /J
+      <Command>xcopy "$(SolutionDir)libpng\projects\vstudio2017\x64\Debug\libpng_a_debug.dll" "$(TargetDir)" /Y /Q /J
 xcopy "$(SolutionDir)halide-win-64-distro\Debug\Halide.dll" "$(TargetDir)" /Y /Q /J
 </Command>
       <Message>Copy DLLs</Message>

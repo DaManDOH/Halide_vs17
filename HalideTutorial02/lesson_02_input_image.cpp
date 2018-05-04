@@ -22,6 +22,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #endif //_MSC_VER
 
+#include <fstream>
 //#include <stdio.h> // DCW
 // DCW - Use the C++ streaming version
 #include <iostream>
@@ -38,6 +39,16 @@ int main(int argc, char **argv) {
 	std::string targetFilename = "images/rgb.png";
 	if (argc > 1) {
 		targetFilename = argv[1];
+	}
+
+	// Added for error-checking
+	std::fstream f(targetFilename.c_str());
+	if (f.is_open()) {
+		f.close();
+	} else {
+		std::cerr << "Could not open file \"" << targetFilename << "\"" << std::endl;
+		dcwpause();
+		return -1;
 	}
 
     // This program defines a single-stage imaging pipeline that
