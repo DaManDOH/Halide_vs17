@@ -18,7 +18,7 @@
 //#include <stdio.h> // DCW
 // DCW - Use the C++ streaming version
 #include <iostream>
-#include "dcwpause.h"
+#include "dcwutility.h"
 
 int main(int argc, char **argv) {
 	// Have a look in the header file above (it won't exist until you've run
@@ -74,7 +74,7 @@ int main(int argc, char **argv) {
 	// Everything worked!
 	std::cout << "Success!\n" << std::endl;
 
-	dcwpause();
+	dcwPause();
 
 	return 0;
 }

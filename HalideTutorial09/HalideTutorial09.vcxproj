@@ -70,12 +70,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)libjpeg\include;$(SolutionDir)libpng;$(SolutionDir)dcwpause;$(SolutionDir)halide-win-64-distro\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)libjpeg\include;$(SolutionDir)libpng;$(SolutionDir)dcwutility;$(SolutionDir)halide-win-64-distro\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)libjpeg\lib;$(SolutionDir)libpng\projects\vstudio2017\x64\Debug;$(SolutionDir)halide-win-64-distro\Debug;$(LibraryPath)</LibraryPath>
     <ExtensionsToDeleteOnClean>*.dll;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(SolutionDir)libjpeg\include;$(SolutionDir)libpng;$(SolutionDir)dcwpause;$(SolutionDir)halide-win-64-distro\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)libjpeg\include;$(SolutionDir)libpng;$(SolutionDir)dcwutility;$(SolutionDir)halide-win-64-distro\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)libjpeg\lib;$(SolutionDir)libpng\projects\vstudio2017\x64\Release;$(SolutionDir)halide-win-64-distro\Release;$(LibraryPath)</LibraryPath>
     <ExtensionsToDeleteOnClean>*.dll;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
   </PropertyGroup>

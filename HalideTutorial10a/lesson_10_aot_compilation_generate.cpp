@@ -35,7 +35,7 @@
 //#include <stdio.h> // DCW
 // DCW - Use the C++ streaming version
 #include <iostream>
-#include "dcwpause.h"
+#include "dcwutility.h"
 using namespace Halide;
 
 int main(int argc, char **argv) {
@@ -80,7 +80,7 @@ int main(int argc, char **argv) {
 
     // To continue this lesson, look in the file lesson_10_aot_compilation_run.cpp
 
-	dcwpause();
+	dcwPause();
 
     return 0;
 }

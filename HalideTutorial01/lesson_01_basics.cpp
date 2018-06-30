@@ -23,7 +23,7 @@
 //#include <stdio.h> // DCW
 // DCW - Or we'll use the C++ streaming version
 #include <iostream>
-#include "dcwpause.h"
+#include "dcwutility.h"
 
 int main(int argc, char **argv) {
 
@@ -104,7 +104,7 @@ int main(int argc, char **argv) {
     // it to generate and run machine code that produced an Buffer.
 	std::cout << "Success!\n" << std::endl;
 
-	dcwpause();
+	dcwPause();
 
     return 0;
 }

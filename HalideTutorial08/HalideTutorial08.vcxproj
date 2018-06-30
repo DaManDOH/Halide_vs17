@@ -72,12 +72,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LibraryPath>$(SolutionDir)halide-win-64-distro\Release;$(LibraryPath)</LibraryPath>
     <ExtensionsToDeleteOnClean>*.dll;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
-    <IncludePath>$(SolutionDir)dcwpause;$(SolutionDir)halide-win-64-distro\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)dcwutility;$(SolutionDir)halide-win-64-distro\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LibraryPath>$(SolutionDir)halide-win-64-distro\Debug;$(LibraryPath)</LibraryPath>
     <ExtensionsToDeleteOnClean>*.dll;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
-    <IncludePath>$(SolutionDir)dcwpause;$(SolutionDir)halide-win-64-distro\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)dcwutility;$(SolutionDir)halide-win-64-distro\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>

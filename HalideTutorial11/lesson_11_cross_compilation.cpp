@@ -27,7 +27,7 @@
 // DCW - Use the C++ streaming version
 #include <iostream>
 #include <fstream>
-#include "dcwpause.h"
+#include "dcwutility.h"
 using namespace Halide;
 
 int main(int argc, char **argv) {
@@ -160,7 +160,7 @@ int main(int argc, char **argv) {
     // https://github.com/halide/Halide/tree/master/apps/
 	std::cout << "Success!\n" << std::endl;
 
-	dcwpause();
+	dcwPause();
 
     return 0;
 }

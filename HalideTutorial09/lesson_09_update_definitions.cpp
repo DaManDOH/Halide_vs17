@@ -33,7 +33,7 @@
 // We'll also need a clock to do performance testing at the end.
 #include "clock.h"
 
-#include "dcwpause.h"
+#include "dcwutility.h"
 
 using namespace Halide;
 
@@ -52,7 +52,7 @@ int main(int argc, char **argv) {
 		filecheck.open(targetFilename, std::ios::binary);
 		if (!filecheck.is_open()) {
 			std::cerr << "Could not open required \"" << targetFilename << "\" file" << std::endl;
-			dcwpause();
+			dcwPause();
 			return -1;
 		}
 		filecheck.close();
@@ -949,7 +949,7 @@ int main(int argc, char **argv) {
 
 	std::cout << "Success!\n" << std::endl;
 
-	dcwpause();
+	dcwPause();
 
 	return 0;
 }

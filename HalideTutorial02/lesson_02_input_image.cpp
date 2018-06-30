@@ -26,7 +26,7 @@
 //#include <stdio.h> // DCW
 // DCW - Use the C++ streaming version
 #include <iostream>
-#include "dcwpause.h"
+#include "dcwutility.h"
 
 // The only Halide header file you need is Halide.h. It includes all of Halide.
 #include "Halide.h"
@@ -47,7 +47,7 @@ int main(int argc, char **argv) {
 		f.close();
 	} else {
 		std::cerr << "Could not open file \"" << targetFilename << "\"" << std::endl;
-		dcwpause();
+		dcwPause();
 		return -1;
 	}
 
@@ -126,7 +126,7 @@ int main(int argc, char **argv) {
 
     std::cout << "Success!\n" << std::endl;
 
-	dcwpause();
+	dcwPause();
 
     return 0;
 }
